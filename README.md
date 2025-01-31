@@ -7,8 +7,7 @@ sudo apt install pwgen
 
 Create opensearch password:
 ```bash
-export OPENSEARCH_INITIAL_ADMIN_PASSWORD=$(pwgen -y 20 1)
-echo $OPENSEARCH_INITIAL_ADMIN_PASSWORD
+pwgen -y 20 1
 ```
 
 Start OpenSeach:
