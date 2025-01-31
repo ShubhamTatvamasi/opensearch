@@ -17,10 +17,11 @@ services:
         soft: 65536
         hard: 65536
     volumes:
-      - opensearch-data1:/usr/share/opensearch/data
+      - opensearch-data:/usr/share/opensearch/data
     ports:
       - 9200:9200
       - 9600:9600
+    restart: unless-stopped
     networks:
       - opensearch-net
 
@@ -29,6 +30,7 @@ services:
     container_name: opensearch-dashboards
     ports:
       - 5601:5601
+    restart: unless-stopped
     expose:
       - "5601"
     environment:
@@ -37,7 +39,7 @@ services:
       - opensearch-net
 
 volumes:
-  opensearch-data1:
+  opensearch-data:
 
 networks:
   opensearch-net:
