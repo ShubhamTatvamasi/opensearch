@@ -16,9 +16,7 @@ helm upgrade -i opensearch opensearch/opensearch \
 Install opensearch-dashboards:
 ```bash
 helm upgrade -i opensearch-dashboards opensearch/opensearch-dashboards \
-  --version 3.6.0 \
-  --namespace opensearch \
-  --create-namespace
+  --version 3.6.0
 ```
 
 
