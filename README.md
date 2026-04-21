@@ -25,6 +25,7 @@ helm upgrade -i opensearch-dashboards opensearch/opensearch-dashboards \
   --set service.type=LoadBalancer
 ```
 
+ID and password: `admin` / `StrongPassword123!`
 
 ---
 
