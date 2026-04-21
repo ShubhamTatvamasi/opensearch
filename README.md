@@ -1,5 +1,19 @@
 # opensearch
 
+Add Helm repo:
+```bash
+helm repo add opensearch https://opensearch-project.github.io/helm-charts
+```
+
+Install opensearch:
+```bash
+helm upgrade -i opensearch opensearch/opensearch \
+  --version 3.6.0
+```
+
+
+---
+
 Install pwgen for password generation:
 ```bash
 sudo apt install pwgen
