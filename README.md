@@ -8,7 +8,10 @@ helm repo add opensearch https://opensearch-project.github.io/helm-charts
 Install opensearch:
 ```bash
 helm upgrade -i opensearch opensearch/opensearch \
-  --version 3.6.0
+  --version 3.6.0 \
+  --namespace opensearch \
+  --create-namespace \
+
 ```
 
 
