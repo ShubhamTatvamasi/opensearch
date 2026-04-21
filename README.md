@@ -13,6 +13,14 @@ helm upgrade -i opensearch opensearch/opensearch \
   --create-namespace
 ```
 
+Install opensearch-dashboards:
+```bash
+helm upgrade -i opensearch-dashboards opensearch/opensearch-dashboards \
+  --version 3.6.0 \
+  --namespace opensearch \
+  --create-namespace
+```
+
 
 ---
 
