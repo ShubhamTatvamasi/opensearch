@@ -10,8 +10,7 @@ Install opensearch:
 helm upgrade -i opensearch opensearch/opensearch \
   --version 3.6.0 \
   --namespace opensearch \
-  --create-namespace \
-
+  --create-namespace
 ```
 
 
