@@ -21,7 +21,8 @@ Install opensearch-dashboards:
 helm upgrade -i opensearch-dashboards opensearch/opensearch-dashboards \
   --version 3.6.0 \
   --namespace opensearch \
-  --create-namespace
+  --create-namespace \
+  --set service.type=LoadBalancer
 ```
 
 
