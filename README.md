@@ -10,7 +10,10 @@ Install opensearch:
 helm upgrade -i opensearch opensearch/opensearch \
   --version 3.6.0 \
   --namespace opensearch \
-  --create-namespace
+  --create-namespace \
+  --set singleNode=true \
+  --set-string extraEnvs[0].name=OPENSEARCH_INITIAL_ADMIN_PASSWORD \
+  --set-string extraEnvs[0].value='StrongPassword123!'
 ```
 
 Install opensearch-dashboards:
