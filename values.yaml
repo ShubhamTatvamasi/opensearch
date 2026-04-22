@@ -4,3 +4,7 @@ protocol: http
 config:
   opensearch.yml: |
     plugins.security.disabled: true
+
+extraEnvs:
+  - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
+    value: StrongPassword123!
