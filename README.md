@@ -23,7 +23,8 @@ helm upgrade -i opensearch-dashboards opensearch/opensearch-dashboards \
   --version 3.6.0 \
   --namespace opensearch \
   --create-namespace \
-  --set service.type=LoadBalancer
+  --set service.type=LoadBalancer \
+  --set opensearchHosts="http://opensearch-cluster-master:9200"
 ```
 
 ID and password: `admin` / `StrongPassword123!`
