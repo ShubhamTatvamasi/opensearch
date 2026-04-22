@@ -3,7 +3,11 @@ protocol: http
 
 config:
   opensearch.yml: |
-    plugins.security.disabled: true
+    cluster.name: opensearch-cluster
+    network.host: 0.0.0.0
+    plugins:
+      security:
+        disabled: true
 
 extraEnvs:
   - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
