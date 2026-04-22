@@ -1,0 +1,6 @@
+singleNode: true
+protocol: http
+
+config:
+  opensearch.yml: |
+    plugins.security.disabled: true
