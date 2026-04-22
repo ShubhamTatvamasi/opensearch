@@ -11,8 +11,8 @@ helm upgrade -i opensearch opensearch/opensearch \
   --version 3.6.0 \
   --namespace opensearch \
   --create-namespace \
-  --set singleNode=true \
   --set protocol=http \
+  --set singleNode=true \
   --set-string 'extraEnvs[0].name=OPENSEARCH_INITIAL_ADMIN_PASSWORD' \
   --set-string 'extraEnvs[0].value=StrongPassword123!'
 ```
