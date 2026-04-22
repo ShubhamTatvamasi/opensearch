@@ -17,6 +17,14 @@ helm upgrade -i opensearch opensearch/opensearch \
   --set-string 'extraEnvs[0].value=StrongPassword123!'
 ```
 
+```bash
+helm upgrade -i opensearch opensearch/opensearch \
+  --version 3.6.0 \
+  --namespace opensearch \
+  --create-namespace \
+  -f values.yaml
+```
+
 Install opensearch-dashboards:
 ```bash
 helm upgrade -i opensearch-dashboards opensearch/opensearch-dashboards \
