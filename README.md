@@ -14,8 +14,7 @@ helm upgrade -i opensearch opensearch/opensearch \
   --set protocol=http \
   --set singleNode=true \
   --set-string 'extraEnvs[0].name=OPENSEARCH_INITIAL_ADMIN_PASSWORD' \
-  --set-string 'extraEnvs[0].value=StrongPassword123!' \
-  --set-string "config.opensearch\\.yml=plugins.security.disabled: true"
+  --set-string 'extraEnvs[0].value=StrongPassword123!'
 ```
 
 Install opensearch-dashboards:
