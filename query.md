@@ -3,7 +3,7 @@
 Get inside opensearch pod:
 ```bash
 kubectl -n opensearch \
-  exec -it opensearch-cluster-master-0 -- sh
+  exec -it opensearch-cluster-master-0 -- bash
 ```
 
 Check indices:
